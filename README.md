@@ -1,1 +1,4 @@
-# Calculator project with HTML, CSS, Javascript using the MVC design pattern
+# Calculator project 
+
+HTML, CSS, Javascript
+MVC Design Pattern
