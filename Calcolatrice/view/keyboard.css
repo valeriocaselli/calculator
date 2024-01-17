@@ -1,0 +1,89 @@
+/* GENERIC SETTINGS (LIGHT MODE & DARK MODE) */
+
+/* Keyboard Container */
+.keyboard {
+    height: 70%;
+    padding: 2.6rem 1rem 1rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 0.5rem;
+    border-radius: 0 0 0.75rem 0.75rem;
+}
+
+/* Button style for both light mode and dark mode */
+.keyboard button {
+    border-radius: 0.65rem;
+    font-size: 1.2rem;
+    font-weight: 800;
+    cursor: pointer;
+    border: none;
+}
+
+/* Every time a button is clicked, its size decreases by 2% */
+.keyboard button:active {
+    transform: scale(0.98);
+}
+
+/* Setting the background-color for operation buttons (+, -, *, /, %) */
+.calculator .keyboard > .operation-button {
+    background: orange;
+}
+
+/* Setting the background-color for equal button (=) */
+.calculator .keyboard > #equal-button {
+    background: linear-gradient(to bottom, rgba(255,158,1,1) 0%, rgb(255, 234, 143) 100%);
+}
+
+
+/* SETTINGS FOR THE LIGHT MODE KEYBOARD */
+
+.calculator.light-mode .keyboard {
+    background: #f5f5dc;
+}
+
+/* Setting the font-color for all buttons */
+.calculator.light-mode .keyboard > button {
+    color: black
+}
+
+/* Setting the background-color for number buttons (0, 1, 2, 3...) and point button */
+.calculator.light-mode .keyboard > .number-button,
+.calculator.light-mode .keyboard > #point-button {
+    background: #ffd1b2;
+}
+
+/* Setting the background-color for AC, C buttons */
+.calculator.light-mode .keyboard > #clear-button,
+.calculator.light-mode .keyboard > #delete-button,
+.calculator.light-mode .keyboard > #percent-button 
+{
+    background: #ffefd5;
+}
+
+
+
+/* SETTINGS FOR THE DARK MODE KEYBOARD */
+
+.calculator.dark-mode .keyboard {
+    background: rgb(36, 36, 36);
+}
+
+/* Setting the font-color for all buttons */
+.calculator.dark-mode .keyboard > button {
+    color: #fff;
+}
+
+/* Setting the background-color for number buttons (0, 1, 2, 3...) and point button */
+.calculator.dark-mode .keyboard > .number-button,
+.calculator.dark-mode .keyboard > #point-button {
+    background: rgb(88, 57, 49)
+}
+
+/* Setting the background-color for AC, C buttons */
+.calculator.dark-mode .keyboard > #clear-button,
+.calculator.dark-mode .keyboard > #delete-button,
+.calculator.dark-mode .keyboard > #percent-button 
+{
+    background: gray;
+}
